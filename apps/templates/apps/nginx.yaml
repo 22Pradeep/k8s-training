@@ -15,8 +15,7 @@ spec:
     targetRevision: main
 #    helm:
 #      values: |
-#      topologySpreadConstraints: {{- toYaml .Values.topologySpreadConstraints | nindent 8 }}
-      
+#      topologySpreadConstraints: {{- toYaml .Values.topologySpreadConstraints | nindent 8 }}      
   syncPolicy:
     automated:
       prune: true
