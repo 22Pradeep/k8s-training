@@ -5,7 +5,7 @@ metadata:
 spec:
   destination:
     namespace: eks-sample-app
-    server: "{{ .Values.eks.server }}"
+    server: "https://kubernetes.default.svc"
   project: target
   source:
     path: charts/github-actions-runners/chart
