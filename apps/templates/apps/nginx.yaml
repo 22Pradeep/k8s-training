@@ -11,6 +11,3 @@ spec:
     path: charts/github-actions-runners/chart
     repoURL: "https://github.com/22Pradeep/k8s-training.git"
     targetRevision: main
-
-    helm:
-      values:
