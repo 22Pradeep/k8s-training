@@ -8,7 +8,7 @@ spec:
   destination:
     namespace: eks-sample-app
     server: "https://kubernetes.default.svc"
-  project: target
+  project: default
   source:
     path: charts/github-actions-runners/chart
     repoURL: "https://github.com/22Pradeep/k8s-training.git"
