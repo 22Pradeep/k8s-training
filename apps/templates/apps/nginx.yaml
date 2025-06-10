@@ -10,7 +10,7 @@ spec:
     server: "https://kubernetes.default.svc"
   project: default
   source:
-    path: charts/github-actions-runners/chart
+    path: Charts/mychart
     repoURL: "https://github.com/22Pradeep/k8s-training.git"
     targetRevision: main
   syncPolicy:
