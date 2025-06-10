@@ -15,7 +15,6 @@ spec:
       labels:
         app: eks-sample-linux-app
     spec:
-      topologySpreadConstraints: {{- toYaml .Values.topologySpreadConstraints | nindent 8 }}
       containers:
       - name: nginx
         image: public.ecr.aws/nginx/nginx:1.23
@@ -25,3 +24,4 @@ spec:
         imagePullPolicy: IfNotPresent
       nodeSelector:
         kubernetes.io/os: linux
+      topologySpreadConstraints: {{- toYaml .Values.topologySpreadConstraints | nindent 8 }}
