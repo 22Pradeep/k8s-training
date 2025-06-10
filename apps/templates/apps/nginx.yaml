@@ -12,10 +12,7 @@ spec:
   source:
     path: Charts/mychart
     repoURL: "https://github.com/22Pradeep/k8s-training.git"
-    targetRevision: main
-#    helm:
-#      values: |
-#      topologySpreadConstraints: {{- toYaml .Values.topologySpreadConstraints | nindent 8 }}      
+    targetRevision: main    
   syncPolicy:
     automated:
       prune: true
