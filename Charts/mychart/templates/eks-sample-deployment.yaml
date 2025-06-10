@@ -5,6 +5,7 @@ metadata:
   namespace: eks-sample-app
   labels:
     app: eks-sample-linux-app
+    app-namespace: eks-sample-app
 spec:
   replicas: 3
   selector:
