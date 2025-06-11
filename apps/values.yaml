@@ -4,4 +4,3 @@ topologySpreadConstraints:
     whenUnsatisfiable: ScheduleAnyway
     labelSelector:
       matchLabels:
-        app-namespace: eks-sample-app
