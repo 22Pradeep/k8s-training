@@ -19,7 +19,7 @@ spec:
     helm:
       values: |
         topologySpreadConstraints: {{- toYaml .Values.topologySpreadConstraints | nindent 8 }}
-        app-namespace: {{ .Release.Namespace }}
+        app-namespace: dnptest
   syncPolicy:
     automated:
       prune: true
