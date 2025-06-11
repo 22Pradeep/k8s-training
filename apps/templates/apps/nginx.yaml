@@ -2,6 +2,9 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: nginx
+  labels:
+    dnp: test
+    dnp1: test2
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
@@ -13,9 +16,6 @@ spec:
     path: Charts/mychart
     repoURL: "https://github.com/22Pradeep/k8s-training.git"
     targetRevision: main
-    helm:
-      values: |
-      topologySpreadConstraints: {{- toYaml .Values.topologySpreadConstraints | nindent 8 }}
   syncPolicy:
     automated:
       prune: true
