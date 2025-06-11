@@ -5,7 +5,7 @@ metadata:
   namespace: eks-sample-app
   labels:
     app: eks-sample-linux-app
-    app-namespace: {{ .Release.Namespace }}
+    app-namespace: dnptest
 spec:
   replicas: 3
   selector:
