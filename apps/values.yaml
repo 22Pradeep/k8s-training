@@ -1,3 +1,4 @@
+app-namespace: dnptest
 topologySpreadConstraints:
   - maxSkew: 1
     topologyKey: kubernetes.io/hostname
