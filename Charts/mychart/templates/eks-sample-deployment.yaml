@@ -15,7 +15,6 @@ spec:
     metadata:
       labels:
         app: eks-sample-linux-app
-        dn-namespace: {{ .Values.app-namespace }}
     spec:
       containers:
       - name: nginx
